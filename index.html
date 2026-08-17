@@ -326,7 +326,7 @@
 
                   <p>Leadership Experience:</p>
                   <ul>
-                    <li>Sub-committee member of Women in Technology (WIT)</li>
+                    <li>Events Deputy at Women in Technology (WIT)</li>
                     </li>
                   </ul>
                 </div>
@@ -384,6 +384,22 @@
                       and efficient log scanning processes.</li>
                     <li><em>Full-Stack Development:</em> Built a web application with a Python backend, AWS Services and
                       Angular frontend to visualize NLP outputs within internal infrastructure.</li>
+                      
+                      <div>
+                        My Reflection: 
+                        <a
+                      href="https://sites.google.com/view/sanjanasdigitalportfolio/home"><i
+                        class="bi bi-eye"></i></a>
+                      </div>
+                      
+                    </ul>
+                </div>
+                <div class="resume-item">
+                  <h4>Private Tutor & Coding Workshops Instructor </h4>
+                  <h5>2023 - Current</h5>
+                  <ul>
+                    <li>Technical Communication: Delivered clear, structured instruction in foundational programming and IT concepts, translating complex technical logic into accessible lessons for diverse learning levels. Also teach Maths and English to Primary School children.</li>
+                    <li>Public Speaking & Group Facilitation: Led interactive, hands-on coding workshops, engaging audiences and guiding live problem-solving sessions with clarity and confidence.</li>
                   </ul>
                 </div>
                 <div class="resume-item">
@@ -397,7 +413,7 @@
               </div>
             </div>
 
-          
+
           </div>
         </section>
 
@@ -422,36 +438,74 @@
             </div>
 
             <!-- Project Entry 0-->
-                <div class="project-entry">
-                  <div class="project-details">
-                    <p style="font-size: 20px;"><strong>Study Buddy</strong></p>
-                    <p>Study Buddy is an AI-powered Chrome extension designed to help students understand, organise, and manage study material in one place. Users can paste study content to generate concise summaries and key points, while built-in notes and task management tools help them stay organised.</p>
-                    
-                    <p>Functionalities</p>
+            <!-- AI Privacy Agent Project Entry -->
+            <div class="project-entry">
+              <div class="project-details">
+                <p style="font-size: 20px;">
+                  <strong>AI Privacy Investigation & Remediation Agent</strong>
+                </p>
+
+                <p>
+                  The AI Privacy Agent is a backend application that investigates
+                  application logs for privacy risks. It detects personally identifiable
+                  information (PII), retrieves relevant organisational policies, evaluates
+                  the severity of an exposure, and automatically produces a redacted log
+                  and structured investigation report.
+                </p>
+
+                <p>Functionalities</p>
                 <ul>
-                  <li>AI Summarisation — Generate concise summaries and key points from pasted study material using an LLM.</li>
-                  <li>Notes Management — Create, edit, organise, and save notes for different subjects</li>
-                  <li>To-Do List — Create tasks, set due dates, and track completion</li>
-                  <li>Web Integration — Highlight text on webpages and send it directly to Study Buddy for summarisation</li>
-                  <li>AI-Powered Study Tools — Planned features include explanations, quiz generation, and flashcard creation
+                  <li>
+                    PII Detection - Detect email addresses, Singapore NRIC numbers, phone
+                    numbers, and credit card numbers using deterministic pattern matching.
+                  </li>
+                  <li>
+                    AI-Powered Investigation — Use an LLM agent and specialised tools to
+                    investigate privacy incidents and explain identified risks.
+                  </li>
+                  <li>
+                    Policy Retrieval (RAG) — Search organisational privacy, logging,
+                    incident, and data-retention policies using semantic similarity search.
+                  </li>
+                  <li>
+                    Risk Classification — Classify privacy incidents as LOW, MEDIUM, or
+                    HIGH based on the sensitive information detected.
+                  </li>
+                  <li>
+                    Automated Redaction — Replace exposed personal information with safe
+                    placeholders such as [REDACTED-NRIC].
+                  </li>
+                  <li>
+                    Structured Reports — Return validated reports containing detected PII,
+                    policy violations, policy sources, explanations, recommended actions,
+                    and redacted logs.
+                  </li>
+                  <li>
+                    REST API — Create investigations, retrieve previous investigation
+                    results, and monitor application health through API endpoints.
+                  </li>
+                  <li>
+                    Testing and Evaluation — Test detection, redaction, policy retrieval,
+                    and API behaviour while evaluating the accuracy of AI-generated reports.
                   </li>
                 </ul>
 
                 <p>Tech Stack</p>
                 <ul>
-                  <li>Frontend: React, TypeScript, Chrome Extension Manifest V3 </li>
-                  <li>Backend: Java, Spring Boot, REST APIs</li>
-                  <li>AI: Groq API, LLM-based text generation</li>
-                  <li>Database: PostgreSQL</li>
-                  <li>Tools: Git, Maven, VS Code, Postman</li>
+                  <li>Backend: Python, FastAPI, Uvicorn, REST APIs</li>
+                  <li>AI: LangChain, Groq API, Llama LLM, tool calling</li>
+                  <li>
+                    RAG: Hugging Face sentence-transformer embeddings, Chroma vector
+                    database, semantic search
+                  </li>
+                  <li>Data Validation: Pydantic structured models</li>
+                  <li>Privacy Processing: Python regular expressions and deterministic redaction</li>
+                  <li>Testing and Evaluation: Pytest, FastAPI TestClient, custom evaluation cases</li>
+                  <li>Deployment and Tools: Docker, uv, Git, VS Code, Postman</li>
                 </ul>
-<div>
-                <img src="assets/img/study buddy.PNG" alt="" , class="img-fluid" />
               </div>
-                  </div>
-                  
-                </div>
-                <hr>
+            </div>
+            <hr>
 
             <!-- Project Entry 1 -->
             <div class="project-entry">
